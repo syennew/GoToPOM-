@@ -30,8 +30,10 @@ class PlaceViewController: UIViewController,UICollectionViewDelegate,UICollectio
         // セルのレイアウト設定
         let layout = UICollectionViewFlowLayout()
         
-        layout.itemSize = CGSize(width: 60, height: 60)
+        layout.itemSize = CGSize(width: 70, height: 70)
         layout.minimumInteritemSpacing = 10
+        layout.minimumLineSpacing = 10
+        layout.sectionInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
         
         collectionView.collectionViewLayout = layout
         
